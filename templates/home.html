@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <!-- <link rel="icon" href="data:,"> -->
+        <link rel="shortcut icon" href="#" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HEALTH INSURANCE YEARLT CHARGES PREDICTION </title>
+    </head>
+    <body style="background-color: rgb(0, 0, 0); text-align: center;font-family:verdana;font-size:15px";
+            TEXT = "WHITE";>
+            <br>
+            <br>
+        <h1> HEALTH INSURANCE CHARGES </h1>
+        <from method = "POST" action="/insurance">
+            
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <label>AGE : </label>
+            <input type = "text" name = "age">
+
+            <br>
+            <br>
+
+            <label>SEX :</label>
+            <label>MALE</label> <input type = "radio" name= "sex" value = "male">
+            <label>FEMALE:</label> <input type = "radio" name= "sex" value = "female"> 
+            
+            <br>
+            <br>
+
+            <label>BMI : </label>
+            <input type = "text" name = "bmi">
+
+            <br>
+            <br>
+
+            <label>Children : </label>
+            <input type = "text" name = "children">
+
+            <br>
+            <br>
+
+            <label>SMOKER :</label>
+            <label>NO </label> <input type = "radio" name= "smoker" value = "no">
+            <label>YES</label> <input type = "radio" name= "smoker" value = "yes"> 
+
+            <br>
+            <br>
+             
+            <label>REGION: </label>>
+            <select name = "region">
+                <option value="northeast">northeast</option>
+                <option value="northwest">northwest</option>
+                <option value="southeast">southeast</option>
+                <option value="southwest">southwest</option>
+            </select>
+
+            <br>
+            <br>
+
+
+            <input type="submit" value="Submit">
+            <br>
+
+            <p> Your Insurance Price is <b> {{ prediction }} Rs.</b> Only </p>
+        </form>
+    </body>
+</html>
